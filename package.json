@@ -1,0 +1,29 @@
+{
+  "name": "gel-minifier",
+  "version": "0.0.1",
+  "description": "minifies gel files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MauriceButler/gel-minifier.git"
+  },
+  "keywords": [
+    "gel",
+    "minifier",
+    "minify"
+  ],
+  "author": "Maurice Butler <maurice.butler@gmail.com>",
+  "license": "MIT",
+  "devDependencies" : {
+    "tape" : "1.1.x"
+  },
+  "dependencies" : {
+      "gedi" : "0.x.x"
+  },
+  "bugs": {
+    "url": "https://github.com/MauriceButler/gel-minifier/issues"
+  }
+}
