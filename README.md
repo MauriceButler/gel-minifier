@@ -1,4 +1,3 @@
-gel-minifier
-============
+#gel-minifier
 
 minifies gel expressions

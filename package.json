@@ -17,11 +17,9 @@
   ],
   "author": "Maurice Butler <maurice.butler@gmail.com>",
   "license": "MIT",
-  "devDependencies" : {
-    "tape" : "1.1.x"
-  },
-  "dependencies" : {
-      "gedi" : "0.x.x"
+  "devDependencies": {
+    "grape": "^0.1.10",
+    "gedi": "^1.0.1"
   },
   "bugs": {
     "url": "https://github.com/MauriceButler/gel-minifier/issues"

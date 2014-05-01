@@ -1,8 +1,9 @@
-module.exports = function(data){
+module.exports = function(data, tokeniser){
+    if(!tokeniser){
+        throw 'A tokeniser is required';
+    }
 
-    var Gedi = require('gedi'),
-        gedi = new Gedi(),
-        tokens = gedi.gel.tokenise(data),
+    var tokens = tokeniser(data),
         thingsThatNeedSpaces = [
             'NumberToken',
             'NullToken',
