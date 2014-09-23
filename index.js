@@ -12,7 +12,9 @@ module.exports = function(tokeniser){
                 'UndefinedToken',
                 'TrueToken',
                 'FalseToken',
-                'IdentifierToken'
+                'IdentifierToken',
+                'PartialToken',
+                'FillToken'
             ],
             compiled = '',
             before;
