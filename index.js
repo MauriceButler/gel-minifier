@@ -24,7 +24,11 @@ module.exports = function(tokeniser){
             if(before && ~thingsThatNeedSpaces.indexOf(before.name) && ~thingsThatNeedSpaces.indexOf(tokens[i].name)){
                 compiled += ' ';
             }
-            compiled += tokens[i].original;
+            if(tokens[i].name === "StringToken" || tokens[i].name === "String2Token"){
+                compiled += tokens[i].original.replace(/\\n/g, '\n');
+            }else{
+                compiled += tokens[i].original;
+            }
             before = tokens[i];
           }
         }
